@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>document</title>
+    </head>
+    <body>
+        <div id="parent">
+            <h1>parent elemen</h1>
+            <p>childern 1</p>
+            <p>childern 2</p>
+        </div>
+        <script>
+            const parent = document.getElementById("parent");
+            //akses parent
+            console.log("parent node name : ", parent.parentnode.nodename);
+            //akses childern
+            console.log("all child nodes : ", parent.childnodes);
+            console.log("only elemen childern : ", parent.childern);
+            console.log("first child : ", parent.firstchild);
+            console.log("first elemen child : ", parent.firstelemenchild);
+        </script>
+    </body>
+</html>

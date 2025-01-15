@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>add remove node</title>
+    </head>
+    <body>
+        <div id="container">
+            <p>paragraf pertama </p>
+        </div>
+        <button id="addnode">add node</button>
+        <button id="removenode">remove node</button>
+        <script>
+            const container = document.getElementById("container");
+            const addnodeButton = document.getElementById("addnode");
+            const removenode = document.getElementById("removenode");
+            //menambahkan node baru
+            addnodeButton.addEventListener("click", ()=>{
+                const newParagraph = document.createElement("p");
+                newParagraph.textContent = "paragraf baru";
+                container.appendChild(newParagraph);
+            });
+            //menghapus node terakhir
+            removenode.addEventListener("click0", ()=>{
+                if(container.lastChild){
+                    container.removeChild(container.lastChild);
+                }
+            });
+        </script>
+    </body>
+</html>
